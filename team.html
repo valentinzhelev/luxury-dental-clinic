@@ -6,100 +6,160 @@
     <title>Нашият екип | Luxe Dental</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
 </head>
 <body>
 
-    <header class="navbar">
+    <header class="navbar" id="navbar">
         <div class="container">
             <div class="logo">LUXURY</div>
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html">НАЧАЛО</a></li>
-                    <li><a href="#">УСЛУГИ</a></li>
+                    <li>
+                        <a href="#">УСЛУГИ <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="bonding.html">БОНДИНГ</a>
+                            <a href="aligners.html">АЛАЙНЕРИ (ПРОЗРАЧНИ ШИНИ)</a>
+                            <a href="whitening.html">ИЗБЕЛВАНЕ НА ЗЪБИ</a>
+                            <a href="kids-dentist.html">ДЕТСКИ ЗЪБОЛЕКАР</a>
+                            <a href="cavity-treatment.html">ЛЕЧЕНИЕ НА КАРИЕС</a>
+                            <a href="endodontics.html">ЕНДОДОНТИЯ</a>
+                            <a href="implants.html">ХИРУРГИЯ И ЗЪБНИ ИМПЛАНТИ</a>
+                            <a href="veneers-crowns.html">ФАСЕТИ И КОРОНИ</a>
+                            <a href="bridges-dentures.html">МОСТОВЕ И ПРОТЕЗИ</a>
+                            <a href="cleaning.html">ПОЧИСТВАНЕ НА ЗЪБЕН КАМЪК</a>
+                            <a href="xray.html">ЗЪБЕН РЕНТГЕН</a>
+                        </div>
+                    </li>
                     <li><a href="team.html" class="active">ЕКИП</a></li>
-                    <li><a href="#">КЛИНИКА</a></li>
+                    <li><a href="about.html">ЗА НАС</a></li>
                     <li><a href="#">ЦЕНИ</a></li>
                     <li><a href="#">ГАЛЕРИЯ</a></li>
                     <li><a href="#">БЛОГ</a></li>
                     <li><a href="#">КОНТАКТИ</a></li>
                 </ul>
             </nav>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
     </header>
 
-    <section class="page-header">
-        <div class="container">
-            <div class="header-left">
-                <a href="index.html" class="back-button">
-                    <i class="fas fa-angle-left"></i> <span>НАЧАЛО</span> / <span>ЕКИП</span>
-                </a>
+    <main>
+        <section class="page-header page-header-team">
+            <div class="container">
                 <h1>Нашият екип</h1>
+                <p>Срещнете професионалистите, които с грижа и опит ще преобразят вашата усмивка.</p>
             </div>
-            <div class="header-right">
-                <p>
-                    Нашият екип от специалисти е тук, за да ви предостави най-висококачествена стоматологична грижа.
-                    С дългогодишен опит и съвременни технологии, ние гарантираме здравето и красотата на вашата усмивка.
-                </p>
-            </div>
-        </div>
-    </section>
-    
-    
-    <section class="team-filters">
-        <div class="container">
-            <div class="filter-box">
-                <input type="text" placeholder="🔍 Търсене..." class="search-bar">
-                <select class="filter-dropdown">
-                    <option value="all">Всички позиции</option>
-                    <option value="dentist">Дентален лекар</option>
-                    <option value="surgeon">Хирург</option>
-                </select>
-                <select class="filter-dropdown">
-                    <option value="all">Всички локации</option>
-                    <option value="sofia">София</option>
-                    <option value="plovdiv">Пловдив</option>
-                </select>
-            </div>
-        </div>
-    </section>
-    
-    <section class="team-members">
-        <div class="container">
-            <div class="team-grid">
-                <div class="team-card">
-                    <img src="assets/images/doctor1.jpg" alt="Д-р Иван Иванов">
-                    <h3>Д-р Иван Иванов</h3>
-                    <p>Специалист по естетична стоматология</p>
-                    <span class="badge">Дентален лекар</span>
-                    <a href="team/ivan-ivanov.html" class="btn">Виж повече</a>
+        </section>
+        
+        <section class="team-section-page">
+            <div class="container">
+                <div class="team-grid-page">
+                    <!-- Team Member 1 -->
+                    <div class="team-member-card">
+                        <div class="member-image">
+                            <img src="assets/images/11.jpg" alt="Д-р Елена Василева">
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Д-р Елена Василева</h3>
+                            <span>Естетична стоматология</span>
+                            <p>Д-р Василева е водещ специалист с над 10 години опит в създаването на холивудски усмивки. Специализирала е в областта на фасетите и бондинга.</p>
+                            <a href="#" class="btn">Научете повече</a>
+                        </div>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="team-member-card">
+                        <div class="member-image">
+                            <img src="assets/images/12.jpg" alt="Д-р Георги Петров">
+                        </div>
+                        <div class="member-info">
+                            <h3>Д-р Георги Петров</h3>
+                            <span>Орална хирургия и имплантология</span>
+                            <p>С прецизност и иновативен подход, д-р Петров възстановява липсващи зъби чрез най-съвременните имплантологични системи.</p>
+                            <a href="#" class="btn">Научете повече</a>
+                        </div>
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="team-member-card">
+                        <div class="member-image">
+                            <img src="assets/images/13.jpg" alt="Д-р Марияна Ангелова">
+                        </div>
+                        <div class="member-info">
+                            <h3>Д-р Марияна Ангелова</h3>
+                            <span>Ортодонтия</span>
+                            <p>Д-р Ангелова е експерт в подреждането на зъбите с помощта на алайнери и брекети, създавайки хармонични и функционални усмивки.</p>
+                            <a href="#" class="btn">Научете повече</a>
+                        </div>
+                    </div>
+                     <!-- Team Member 4 -->
+                     <div class="team-member-card">
+                        <div class="member-image">
+                            <img src="assets/images/14.jpg" alt="Д-р Симеон Тодоров">
+                        </div>
+                        <div class="member-info">
+                            <h3>Д-р Симеон Тодоров</h3>
+                            <span>Детска стоматология</span>
+                            <p>С търпение и позитивен подход, д-р Тодоров превръща посещението при зъболекаря в приятно изживяване за най-малките ни пациенти.</p>
+                            <a href="#" class="btn">Научете повече</a>
+                        </div>
+                    </div>
                 </div>
-    
-                <div class="team-card">
-                    <img src="assets/images/doctor2.jpg" alt="Д-р Мария Петрова">
-                    <h3>Д-р Мария Петрова</h3>
-                    <p>Ортодонтия и естетични алайнери</p>
-                    <span class="badge">Дентален лекар</span>
-                    <a href="team/maria-petrova.html" class="btn">Виж повече</a>
-                </div>
-    
-                <div class="team-card">
-                    <img src="assets/images/doctor3.jpg" alt="Д-р Георги Димитров">
-                    <h3>Д-р Георги Димитров</h3>
-                    <p>Имплантология и хирургия</p>
-                    <span class="badge">Хирург</span>
-                    <a href="team/georgi-dimitrov.html" class="btn">Виж повече</a>
-                </div>
             </div>
-        </div>
-    </section>
-    
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                 <h2>Готови ли сте да се запознаете с нашия екип?</h2>
+                 <p>Запишете си час за консултация и направете първата крачка към вашата нова усмивка.</p>
+                 <a href="#" class="btn">Запазете час</a>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer-section">
         <div class="container">
-            <p>© 2025 Luxe Dental | Всички права запазени</p>
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>LUXURY</h2>
+                    <p>Вашата усмивка е нашето най-голямо съкровище.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Полезни връзки</h3>
+                    <ul>
+                        <li><a href="#">Мисия и визия</a></li>
+                        <li><a href="team.html">Екип</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Услуги</h3>
+                    <ul>
+                        <li><a href="#">Почистване и избелване</a></li>
+                        <li><a href="#">Коронки и фасети</a></li>
+                        <li><a href="#">Имплантология</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Контакти</h3>
+                    <p><i class="fas fa-phone-alt"></i> +359 88 123 4567</p>
+                    <p><i class="fas fa-envelope"></i> info@luxedent.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> ул. "Лукс" 12, София</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Luxe Dental | Всички права запазени</p>
+            </div>
         </div>
     </footer>
 
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
