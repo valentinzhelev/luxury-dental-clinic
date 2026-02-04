@@ -10,7 +10,6 @@
 </head>
 <body>
 
-    <!-- Navbar -->
     <header class="navbar" id="navbar">
         <div class="container">
             <div class="logo">LUXURY</div>
@@ -18,27 +17,17 @@
                 <ul class="nav-links">
                     <li><a href="index.html">НАЧАЛО</a></li>
                     <li>
-                        <a href="#">УСЛУГИ <i class="fas fa-chevron-down"></i></a>
+                        <a href="bonding.html">УСЛУГИ <i class="fas fa-chevron-down"></i></a>
                         <div class="dropdown-menu">
                             <a href="bonding.html">БОНДИНГ</a>
-                            <a href="aligners.html">АЛАЙНЕРИ (ПРОЗРАЧНИ ШИНИ)</a>
-                            <a href="whitening.html">ИЗБЕЛВANE НА ЗЪБИ</a>
-                            <a href="kids-dentist.html">ДЕТСКИ ЗЪБОЛЕКАР</a>
-                            <a href="cavity-treatment.html">ЛЕЧЕНИЕ НА КАРИЕС</a>
-                            <a href="endodontics.html">ЕНДОДОНТИЯ</a>
-                            <a href="implants.html">ХИРУРГИЯ И ЗЪБНИ ИМПЛАНТИ</a>
-                            <a href="veneers-crowns.html">ФАСЕТИ И КОРОНИ</a>
-                            <a href="bridges-dentures.html">МОСТОВЕ И ПРОТЕЗИ</a>
-                            <a href="cleaning.html">ПОЧИСТВАНЕ НА ЗЪБЕН КАМЪК</a>
-                            <a href="xray.html">ЗЪБЕН РЕНТГЕН</a>
                         </div>
                     </li>
                     <li><a href="team.html">ЕКИП</a></li>
-                    <li><a href="#" class="active">ЗА НАС</a></li>
-                    <li><a href="#">ЦЕНИ</a></li>
-                    <li><a href="#">ГАЛЕРИЯ</a></li>
-                    <li><a href="#">БЛОГ</a></li>
-                    <li><a href="#">КОНТАКТИ</a></li>
+                    <li><a href="about.html" class="active">КЛИНИКА</a></li>
+                    <li><a href="price.html">ЦЕНИ</a></li>
+                    <li><a href="gallery.html">ГАЛЕРИЯ</a></li>
+                    <li><a href="blog.html">БЛОГ</a></li>
+                    <li><a href="contact.html">КОНТАКТИ</a></li>
                 </ul>
             </nav>
             <div class="social-icons">
@@ -49,7 +38,7 @@
     </header>
 
     <main>
-        <section class="service-header page-header-about">
+        <section class="service-header page-header-about reveal">
             <div class="container">
                 <div class="breadcrumb">
                     <a href="index.html">Начало</a> / <span>За нас</span>
@@ -59,15 +48,15 @@
             </div>
         </section>
     
-        <section class="about-detailed">
+        <section class="about-detailed reveal">
             <div class="container">
                 <div class="about-grid">
                     <div class="about-image">
                         <img src="assets/images/10.jpg" alt="Интериор на дентална клиника Luxury">
                     </div>
                     <div class="about-content">
-                        <span class="subheading">НАШАТА ФИЛОСОФИЯ</span>
-                        <h2>Грижа, издигната до изкуство</h2>
+                        <span class="section-eyebrow">Нашата философия</span>
+                        <h2 class="section-title">Грижа, издигната до изкуство</h2>
                         <p>В Luxury Dental Clinic вярваме, че денталната грижа трябва да бъде преживяване. От момента, в който влезете в нашата клиника, до финалния резултат, нашият екип се грижи да се чувствате спокойни, уверени и обгрижени. </p>
                         <p>Създадохме пространство, което съчетава най-модерните дентални технологии с луксозен интериор и персонално отношение. Нашата цел не е просто да лекуваме, а да създаваме красота и да връщаме самочувствието на нашите пациенти.</p>
                         <a href="team.html" class="btn">Запознайте се с екипа</a>
@@ -76,11 +65,12 @@
             </div>
         </section>
     
-        <section class="about-features">
+        <section class="about-features reveal">
             <div class="container">
                 <div class="section-header">
-                     <h2>Защо да изберете нас?</h2>
-                     <p>Ние предлагаме повече от дентални услуги - предлагаме цялостно преживяване.</p>
+                     <span class="section-eyebrow">Защо Luxury</span>
+                     <h2 class="section-title">Защо да изберете нас?</h2>
+                     <p class="section-subtitle">Ние предлагаме повече от дентални услуги - предлагаме цялостно преживяване.</p>
                 </div>
                 <div class="features-grid">
                     <div class="feature-card">
@@ -102,7 +92,7 @@
             </div>
         </section>
         
-        <section class="cta-section">
+        <section class="cta-section reveal">
             <div class="container">
                  <h2>Започнете своето пътешествие към мечтаната усмивка</h2>
                  <p>Свържете се с нас днес, за да резервирате своята първа консултация.</p>
@@ -112,61 +102,69 @@
     
     </main>
 
-    <!-- Footer -->
     <footer class="footer-section">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <h2>LUXURY</h2>
-                    <p>Вашата усмивка е нашето най-голямо съкровище.</p>
+        <div class="footer-cta">
+            <div class="container">
+                <h2>Готови ли сте да преобразите усмивката си?</h2>
+                <a href="contact.html" class="btn">Запазете час сега</a>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="container footer-grid">
+                <div class="footer-column footer-brand-column">
+                    <div class="logo">LUXURY</div>
+                    <p>Нашата мисия е да предоставим изключителна дентална грижа в спокойна и луксозна атмосфера, като използваме най-съвременните технологии.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
-
-                <div class="footer-links">
-                    <h3>Полезни връзки</h3>
+                <div class="footer-column">
+                    <h3 class="footer-title">Бързи връзки</h3>
                     <ul>
-                        <li><a href="#">Мисия и визия</a></li>
+                        <li><a href="index.html">Начало</a></li>
+                        <li><a href="about.html">За нас</a></li>
                         <li><a href="team.html">Екип</a></li>
-                        <li><a href="#">Контакти</a></li>
-                        <li><a href="#">Случаи</a></li>
-                        <li><a href="#">Актуални промоции</a></li>
-                        <li><a href="#">Новини</a></li>
+                        <li><a href="price.html">Цени</a></li>
+                        <li><a href="gallery.html">Галерия</a></li>
+                        <li><a href="blog.html">Блог</a></li>
                     </ul>
                 </div>
-                <div class="footer-services">
-                    <h3>Услуги</h3>
+                <div class="footer-column">
+                    <h3 class="footer-title">Основни услуги</h3>
                     <ul>
-                        <li><a href="#">Почистване и избелване</a></li>
-                        <li><a href="#">Коронки и фасети</a></li>
-                        <li><a href="#">Ортодонтско лечение</a></li>
-                        <li><a href="#">Дентална естетика</a></li>
-                        <li><a href="#">Детска стоматология</a></li>
-                        <li><a href="#">Имплантология</a></li>
+                        <li><a href="bonding.html">Бондинг</a></li>
                     </ul>
                 </div>
-                <div class="footer-contact">
-                    <h3>Контакти</h3>
-                    <p><i class="fas fa-phone-alt"></i> +359 88 123 4567</p>
-                    <p><i class="fas fa-envelope"></i> info@luxedent.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> ул. "Лукс" 12, София</p>
-                </div>
-
-                <div class="footer-social">
-                    <h3>Последвайте ни</h3>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <div class="footer-column">
+                    <h3 class="footer-title">Контакти</h3>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>ул. "Лукс" 12, 1000 София</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:+359881234567">+359 88 123 4567</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:info@luxedent.com">info@luxedent.com</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Пон - Пет: 09:00 - 19:00</span>
                     </div>
                 </div>
             </div>
-
-            <div class="footer-bottom">
-                <p>
-                    <a href="#">Общи условия</a> |
-                    <a href="#">Политика за поверителност</a> |
-                    <a href="#">Политика за бисквитки</a>
-                </p>
-                <p>© 2025 Luxe Dental | Всички права запазени</p>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2025 Luxe Dental. Всички права запазени.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Политика за поверителност</a>
+                    <a href="#">Условия за ползване</a>
+                </div>
             </div>
         </div>
     </footer>

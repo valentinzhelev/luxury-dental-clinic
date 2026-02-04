@@ -2,11 +2,11 @@
 
 A premium, multi-page website template for a high-end dental clinic, built with **HTML5**, **Tailwind CSS**, and **Vanilla JavaScript**. This project is ideal for demonstrating advanced front-end layout skills and a polished luxury design, suitable for real businesses or CMS integration.
 
-## 🌐 Live Preview
+## Live Preview
 
-👉 [View Live Demo](https://valentinzhelev.github.io/luxury-dental-clinic/)
+[View Live Demo](https://valentinzhelev.github.io/luxury-dental-clinic/)
 
-## 🏗️ Structure
+## Structure
 
 This is a fully structured multi-page template including:
 
@@ -19,6 +19,6 @@ This is a fully structured multi-page template including:
 - **Blog** – Articles and tips (placeholder)
 - **Contact** – Form, address, phone, and Google Map
 
-## 💼 Technologies Used
+## Technologies Used
 
 - **Frontend**: HTML, CSS, JavaScript

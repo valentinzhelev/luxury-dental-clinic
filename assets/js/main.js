@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Logic for the scrolled navbar effect
     const navbar = document.getElementById("navbar");
     if (navbar) {
         window.addEventListener("scroll", function () {
@@ -11,8 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Intersection Observer for fade-in animations
-    const sections = document.querySelectorAll(".hero, .about-section-new, .team-section, .pricing-section, .contact-section, .cta-bar, .footer-section, .page-header-about, .about-detailed, .about-features, .cta-section, .page-header-team, .team-section-page, .service-header, .service-main-content, .service-process, .service-faq, .page-header-pricing, .pricing-page-section, .gallery-section");
+    const sections = document.querySelectorAll(".reveal, .hero, .about-section-new, .team-section, .pricing-section, .contact-section, .cta-bar, .footer-section, .page-header-about, .about-detailed, .about-features, .cta-section, .page-header-team, .team-section-page, .service-header, .service-main-content, .service-process, .service-faq, .page-header-pricing, .pricing-page-section, .gallery-section");
 
     if (sections.length > 0) {
         const observerOptions = {
@@ -34,23 +32,31 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // FAQ Accordion Logic
     const faqItems = document.querySelectorAll('.faq-item');
     if (faqItems.length > 0) {
         faqItems.forEach(item => {
             const question = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+            
             question.addEventListener('click', () => {
                 faqItems.forEach(otherItem => {
-                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                    if (otherItem !== item) {
                         otherItem.classList.remove('active');
+                        const otherAnswer = otherItem.querySelector('.faq-answer');
+                        if (otherAnswer) {
+                            otherAnswer.classList.remove('active');
+                        }
                     }
                 });
+                
                 item.classList.toggle('active');
+                if (answer) {
+                    answer.classList.toggle('active');
+                }
             });
         });
     }
 
-    // Contact Form Logic
     const contactForm = document.querySelector(".contact-form form");
     if(contactForm) {
         contactForm.addEventListener("submit", function(event) {
@@ -60,7 +66,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Contact Form Logic for the contact page
     const contactPageForm = document.querySelector(".contact-form-page");
     if(contactPageForm) {
         contactPageForm.addEventListener("submit", function(event) {
@@ -70,7 +75,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Gallery Page Logic
     const filterButtons = document.querySelectorAll('.filter-btn');
     const galleryItems = document.querySelectorAll('.gallery-item');
     const lightbox = document.getElementById('lightbox-modal');
@@ -80,7 +84,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const nextBtn = document.querySelector('.next-lightbox');
 
     if (galleryItems.length > 0 && lightbox) {
-        // --- Filter Logic ---
         filterButtons.forEach(button => {
             button.addEventListener('click', () => {
                 filterButtons.forEach(btn => btn.classList.remove('active'));
@@ -96,7 +99,6 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
 
-        // --- Lightbox Logic ---
         let currentImageIndex;
         let visibleItems = [];
 
@@ -108,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (index >= 0 && index < visibleItems.length) {
                 lightboxImg.src = visibleItems[index].querySelector('img').src;
                 currentImageIndex = index;
-                lightbox.style.display = 'block';
+                lightbox.style.display = 'flex';
             }
         };
         
@@ -145,11 +147,37 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         document.addEventListener('keydown', (e) => {
-            if (lightbox.style.display === 'block') {
+            if (lightbox.style.display === 'flex') {
                 if (e.key === 'ArrowRight') showNextImage();
                 else if (e.key === 'ArrowLeft') showPrevImage();
                 else if (e.key === 'Escape') closeLightbox();
             }
         });
     }
+
+    const navLinks = document.querySelector('.nav-links');
+    const dropdownItems = document.querySelectorAll('.nav-links li');
+    
+    dropdownItems.forEach(item => {
+        const link = item.querySelector('a');
+        const dropdown = item.querySelector('.dropdown-menu');
+        
+        if (dropdown && window.innerWidth <= 768) {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                dropdown.style.display = dropdown.style.display === 'flex' ? 'none' : 'flex';
+            });
+        }
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.nav-links')) {
+            dropdownItems.forEach(item => {
+                const dropdown = item.querySelector('.dropdown-menu');
+                if (dropdown) {
+                    dropdown.style.display = 'none';
+                }
+            });
+        }
+    });
 });
